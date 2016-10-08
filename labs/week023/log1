@@ -1,0 +1,84 @@
+====Test random input 1000000 sortB===
+
+real	0m0.375s
+user	0m0.332s
+sys	0m0.016s
+
+real	0m0.349s
+user	0m0.340s
+sys	0m0.008s
+
+real	0m0.354s
+user	0m0.348s
+sys	0m0.004s
+
+real	0m0.353s
+user	0m0.352s
+sys	0m0.000s
+
+real	0m0.350s
+user	0m0.344s
+sys	0m0.004s
+====Test random input 2000000 sortB===
+
+real	0m0.362s
+user	0m0.356s
+sys	0m0.004s
+
+real	0m0.354s
+user	0m0.344s
+sys	0m0.008s
+
+real	0m0.362s
+user	0m0.348s
+sys	0m0.012s
+
+real	0m0.358s
+user	0m0.352s
+sys	0m0.004s
+
+real	0m0.362s
+user	0m0.360s
+sys	0m0.000s
+====Test random input 4000000 sortB===
+
+real	0m0.405s
+user	0m0.376s
+sys	0m0.008s
+
+real	0m0.354s
+user	0m0.344s
+sys	0m0.008s
+
+real	0m0.354s
+user	0m0.340s
+sys	0m0.012s
+
+real	0m0.358s
+user	0m0.348s
+sys	0m0.008s
+
+real	0m0.354s
+user	0m0.352s
+sys	0m0.000s
+====Test random input 8000000 sortB===
+
+real	0m0.357s
+user	0m0.348s
+sys	0m0.004s
+
+real	0m0.352s
+user	0m0.344s
+sys	0m0.004s
+
+real	0m0.352s
+user	0m0.336s
+sys	0m0.012s
+
+real	0m0.352s
+user	0m0.348s
+sys	0m0.000s
+
+real	0m0.352s
+user	0m0.348s
+sys	0m0.000s

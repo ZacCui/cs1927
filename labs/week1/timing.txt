@@ -1,0 +1,86 @@
+Created by Zac Cui (Ziyi Cui) z5097491, Huijia Wang z5097494
+Date: 29/7/2016
+
+Input	Initial	Has	Number	AvgTime	AvgTime
+Size	Order	Dups	of runs	forusel	forsort
+5000	random	no	7	0.0709s	0.0023s
+5000	sorted	no	7	0.1189s	0.0023s
+5000	reverse	no	7	0.0034s	0.0034s
+5000	random	yes	7	0.0360s	0.0034s
+5000	sorted	yes	7	0.1206s	0.0023s
+5000	reverse	yes	7	0.0029s	0.0034s
+10000	random	no	7	0.3166s	0.0109s
+10000	sorted	no	7	0.4554s	0.0046s
+10000	reverse	no	7	0.0034s	0.0069s
+10000	random	yes	7	0.1640s	0.0029s
+10000	sorted	yes	7	0.3069s 0.0040s
+10000	reverse	yes	7	0.0029s	0.0080s
+
+The result of the tests shows that 'sort' is faster than './usel' in
+most cases, except the Initial order of sequence is reverse.
+Different algorithms implemented by the two programs can result in 
+the difference between the processing speed. 
+
+According to wikipedia, Linux employs the merge algorithm while Intlist.c
+employs Insertion by checking the IntListSortedCopy(IntList L) function.
+Using insertion to sort sequence(N) needs to operate at least N times, 
+no matter the sequence is sorted,random or reverse. While merge algorithms
+operate less times when the sequence is sorted and random.
+
+In the IntListInsertInOrder(IntList L, int v) 
+we set the condition of for loop : curr != NULL && v > curr->data
+
+Insertion :
+		suppose the length of given sequence is N.
+		
+		In the IntListSortedCopy(IntList L) function, we pick up
+		elements in order from given sequence and insert to a new empty
+		list.
+		
+		case reverse:
+			Due to the condition, the code never go through the for loop
+			in the IntListInsertInOrder(IntList L, int v) so that computer only
+			operates N times. (The best case)
+			
+		case random:
+			In this case, the code will go through the for loop in the 
+			IntListInsertInOrder(IntList L, int v) and will jump out of 
+			the loop randomly (base on the given sequence). Hence computer
+			would operates X times (N < X < N^2).
+			
+		case sorted:
+			This is the worst case in this Insertion algorithm. Due to
+			the condition, the code have to go through the for loop in the 
+			IntListInsertInOrder(IntList L, int v) and jump out at the end
+			of the loop, which means run N times. Therefore, computer
+			needs to run N^2 times to make a sorted sequence.
+
+	Theoretically:			
+		Speed:				Reverse > random > sorted
+		Operate times:		   N    <    X   <   N^2	
+	
+	Actually:
+		Speed:				Reverse > random > sorted
+			
+			
+Merge Sorting: 
+
+	We are not sure whether the linux system sort the sequence by creating
+	a new empty memory or just operating inside.
+	 
+	However, the general theory of merge sorting is split the sequence
+	from midpoint each time till each part only contains 2 elements
+	(if N % 2 != 0 there will be a part only contains 1 element.)
+	In general the merge sorting will faster than insertion except one 
+	special case.
+	
+The result basiclly obey the anaylsis above.
+	
+	
+	
+	
+  
+			
+		
+
+

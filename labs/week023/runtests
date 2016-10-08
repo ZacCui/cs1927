@@ -1,0 +1,20 @@
+#!/bin/sh
+
+cat /dev/null > logA
+for size in 100000 200000 400000 800000
+do
+	for order in random
+	do
+		echo === Testing for $order input, size $size === >> logA
+		for i in 1 2 3 4 5
+		do
+			case $order in
+			random) flag="R" ;;
+			sorted) flag="A" ;;
+			reverse) flag="D" ;;
+			esac
+			{ ./gen $size $flag | time --format="%U" ./sortB > /dev/null ; } 2>> logA
+		done
+		echo "" >> logA
+	done
+done

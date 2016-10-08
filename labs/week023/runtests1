@@ -1,0 +1,24 @@
+#!/bin/sh
+
+cat /dev/null > log
+for size in 2000 4000 6000 8000 10000
+do
+	for order in sorted reverse random
+	do
+		echo === Testing for $order input, size $size === >> log
+		for i in {1..5}
+		do
+			case $order in
+			random) flag="R" ;;
+			sorted) flag="A" ;;
+			reverse) flag="D" ;;
+			esac
+			{ ./gen $size $flag | sort -n > out ;}
+			{ ./gen $size $flag | ./sortA > outA ; }
+			{ ./gen $size $flag | ./sortB > outB ; }
+			diff outA out ;
+			diff outB out ;
+		done
+		echo "" >> log
+	done
+done

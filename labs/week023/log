@@ -1,0 +1,105 @@
+=== Testing for random input, size 20000 ===
+0.00
+0.00
+0.00
+0.00
+0.00
+
+=== Testing for reverse input, size 20000 ===
+0.43
+0.42
+0.42
+0.43
+0.43
+
+=== Testing for sorted input, size 20000 ===
+0.45
+0.45
+0.45
+0.45
+0.45
+
+=== Testing for random input, size 40000 ===
+0.00
+0.00
+0.00
+0.00
+0.00
+
+=== Testing for reverse input, size 40000 ===
+1.72
+1.71
+1.71
+1.71
+1.71
+
+=== Testing for sorted input, size 40000 ===
+1.80
+1.80
+1.80
+1.80
+1.80
+
+=== Testing for random input, size 60000 ===
+0.01
+0.01
+0.01
+0.01
+0.01
+
+=== Testing for reverse input, size 60000 ===
+3.85
+3.84
+3.85
+3.84
+3.86
+
+=== Testing for sorted input, size 60000 ===
+4.06
+4.06
+4.06
+4.06
+4.06
+
+=== Testing for random input, size 80000 ===
+0.02
+0.02
+0.02
+0.02
+0.02
+
+=== Testing for reverse input, size 80000 ===
+6.84
+6.84
+6.84
+6.84
+6.84
+
+=== Testing for sorted input, size 80000 ===
+7.21
+7.20
+7.20
+7.21
+7.21
+
+=== Testing for random input, size 100000 ===
+0.02
+0.02
+0.02
+0.02
+0.02
+
+=== Testing for reverse input, size 100000 ===
+10.68
+10.68
+10.69
+10.68
+10.68
+
+=== Testing for sorted input, size 100000 ===
+11.25
+11.26
+11.26
+11.26
+11.26
+

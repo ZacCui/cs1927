@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cat /dev/null > log1
+for i in 1000000 2000000 4000000 8000000
+do
+	seq $i | sort -R > out;
+	echo ====Test random input $i sortB=== >>log1
+	for t in {1..5}
+	do
+		{ time ./sortB < out > /dev/null; } 2>> log1
+	done
+done

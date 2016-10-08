@@ -1,0 +1,28 @@
+=== Testing for random input, size 100000 ===
+0.03
+0.02
+0.02
+0.02
+0.02
+
+=== Testing for random input, size 200000 ===
+0.05
+0.06
+0.06
+0.06
+0.06
+
+=== Testing for random input, size 400000 ===
+0.14
+0.14
+0.14
+0.12
+0.13
+
+=== Testing for random input, size 800000 ===
+0.28
+0.28
+0.30
+0.28
+0.28
+
