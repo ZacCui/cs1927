@@ -186,28 +186,35 @@ Chain length distribution
        9        2
 Testing completed OK
 
+=======================================================================
+
 b)
-Yes, the prime numbers do lead to a better distribution of hash values. Apparently, the max chain length getting shoter when the prime number of slots increasing. In addition, the distribution contain more items in small chain length.
+Yes, the prime numbers do lead to a better distribution of hash values. Apparently, the max chain length getting shoter when the prime number of slots increasing. In addition, there are more slots with length around 0-2
+
+=======================================================================
 
 c)
 Yes
+wagner % ./mkwords 1000000 | ./words - 779747
 Reading words from stdin
 Hash Table Stats:
-Number of slots = 857137
-Number of items = 857424
+Number of slots = 779747
+Number of items = 857144
 Chain length distribution
   Length  #Chains
-       0   315092
-       1   315639
-       2   157414
-       3    52728
-       4    13119
-       5     2655
-       6      419
-       7       62
-       8        7
-       9        2
-proportion is 0.632390
+       0   259757
+       1   285808
+       2   156381
+       3    57659
+       4    15991
+       5     3420
+       6      601
+       7      113
+       8       17
+proportion is 0.666870 
+Testing completed OK
+
+=======================================================================
 
 d)
 Reading words from /home/cs1927/web/16s2/labs/week12/places
@@ -735,32 +742,131 @@ Obviously, the performence of 1048573 slots is much better than
  Therefore, choose a suitable slots size is quiet important for function
  perfromence.
  
+ =======================================================================
+
  e)
- Each sample counts as 0.01 seconds.
+ wagner % ./mkwords 1000000 | ./words - 345678 
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 345678
+Number of items = 857144
+Chain length distribution
+  Length  #Chains
+       0    34058
+       1    74486
+       2    85026
+       3    68076
+       4    42861
+       5    22710
+       6    10728
+       7     4683
+       8     1909
+       9      703
+      10      283
+      11       88
+      12       44
+      13       14
+      14        7
+      15        2
+proportion is 0.901475 
+Testing completed OK
+
+Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  ms/call  ms/call  name    
- 30.56      0.29     0.29  2000004     0.00     0.00  ListSearch
- 29.51      0.57     0.28  2000004     0.00     0.00  hash
- 12.65      0.69     0.12   345678     0.00     0.00  ListLength
- 12.65      0.81     0.12   345678     0.00     0.00  dropList
-  6.32      0.87     0.06  1000000     0.00     0.00  HashTableInsert
-  2.11      0.89     0.02                             main
-  1.05      0.90     0.01  4469132     0.00     0.00  cmp
-  1.05      0.91     0.01  1000004     0.00     0.00  HashTableSearch
-  1.05      0.92     0.01  1000001     0.00     0.00  ItemGet
-  1.05      0.93     0.01   857144     0.00     0.00  dropItem
-  1.05      0.94     0.01   345678     0.00     0.00  newList
-  1.05      0.95     0.01        1    10.01   140.16  dropHashTable
-  0.00      0.95     0.00  1000000     0.00     0.00  newItem
-  0.00      0.95     0.00   857144     0.00     0.00  ListInsert
-  0.00      0.95     0.00        1     0.00   120.14  HashTableStats
-  0.00      0.95     0.00        1     0.00    10.01  newHashTable
+ 45.51      0.60     0.60  2000004     0.00     0.00  hash
+ 21.99      0.89     0.29  2000004     0.00     0.00  ListSearch
+  9.10      1.01     0.12   345678     0.00     0.00  ListLength
+  9.10      1.13     0.12   345678     0.00     0.00  dropList
+  4.55      1.19     0.06  1000000     0.00     0.00  HashTableInsert
+  2.65      1.23     0.04  1000001     0.00     0.00  ItemGet
+  2.28      1.26     0.03  4469132     0.00     0.00  cmp
+  0.76      1.27     0.01  1000004     0.00     0.00  HashTableSearch
+  0.76      1.28     0.01   857144     0.00     0.00  ListInsert
+  0.76      1.29     0.01   345678     0.00     0.00  newList
+  0.76      1.30     0.01        1    10.01   130.15  HashTableStats
+  0.76      1.31     0.01        1    10.01   135.15  dropHashTable
+  0.76      1.32     0.01                             main
+  0.38      1.32     0.01   857144     0.00     0.00  dropItem
+  0.00      1.32     0.00  1000000     0.00     0.00  newItem
+  0.00      1.32     0.00        1     0.00    10.01  newHashTable
 
-As we can the table above, ListSearch function is the most costly
-function, and the cost of hash function is very close to ListSearch
-function.
+
+  wagner % ./mkwords 1000000 | ./words - 99999
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 99999
+Number of items = 857144
+Chain length distribution
+  Length  #Chains
+       0       21
+       1      184
+       2      749
+       3     1957
+       4     4276
+       5     7369
+       6    10433
+       7    12738
+       8    13564
+       9    12985
+      10    11170
+      11     8798
+      12     6154
+      13     4084
+      14     2528
+      15     1483
+      16      769
+      17      392
+      18      189
+      19       86
+      20       46
+      21       13
+      22        8
+      23        2
+      27        1
+proportion is 0.999790 
+Testing completed OK
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 36.34      0.53     0.53  2000004     0.00     0.00  ListSearch
+ 32.23      1.00     0.47  2000004     0.00     0.00  hash
+  8.23      1.12     0.12    99999     0.00     0.00  ListLength
+  7.54      1.23     0.11  9698877     0.00     0.00  cmp
+  7.54      1.34     0.11    99999     0.00     0.00  dropList
+  4.80      1.41     0.07  1000000     0.00     0.00  HashTableInsert
+  2.06      1.44     0.03                             main
+  0.69      1.45     0.01  1000001     0.00     0.00  ItemGet
+  0.34      1.46     0.01  1000000     0.00     0.00  newItem
+  0.34      1.46     0.01   857144     0.00     0.00  dropItem
+  0.00      1.46     0.00  1000004     0.00     0.00  HashTableSearch
+  0.00      1.46     0.00   857144     0.00     0.00  ListInsert
+  0.00      1.46     0.00    99999     0.00     0.00  newList
+  0.00      1.46     0.00        1     0.00   120.14  HashTableStats
+  0.00      1.46     0.00        1     0.00   115.13  dropHashTable
+  0.00      1.46     0.00        1     0.00     0.00  newHashTable
+
+Compare the two tables above, we can see that the hash function is most
+costly function when the slots size is large or the maximum chain length is 
+large enough. Meanwhile, the ListSearch function is most costly function
+when when the slots size is relatively small or the maximum chain length is 
+small enough。
+
+=======================================================================
 
 f)
+
+Method
+1）Improve ListSearch function (reduce the search cost) -- potentally using BST
 improve the ListSearch function and ListInsert function. Insert all the 
 item in order and replace the current search function with binary search.
+
+2)Improve the hash function (improve the distribution)
+Don't have efficient way to improve the hash for now :( 
+
+=======================================================================
+
+g)
+
+
 
