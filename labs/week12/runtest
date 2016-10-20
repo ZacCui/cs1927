@@ -1,0 +1,9 @@
+#!/bin/sh
+
+rm out1
+for size in 85711 100000 214283 400000 400837 857144 857137
+do
+	./mkwords 1000000 3 | ./words - $size >> out1
+	echo""
+done
+

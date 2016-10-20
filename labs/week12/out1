@@ -1,0 +1,178 @@
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 85711
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0        2
+       1       45
+       2      183
+       3      657
+       4     1573
+       5     3234
+       6     5340
+       7     7774
+       8     9770
+       9    10580
+      10    10715
+      11     9806
+      12     8233
+      13     6224
+      14     4414
+      15     2956
+      16     1889
+      17     1134
+      18      592
+      19      297
+      20      165
+      21       68
+      22       39
+      23       11
+      24        8
+      25        2
+proportion is 0.999977 Testing completed OK
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 100000
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0       63
+       1      380
+       2     1339
+       3     3329
+       4     5849
+       5     8645
+       6    11012
+       7    12045
+       8    11808
+       9    10668
+      10     8932
+      11     7141
+      12     5452
+      13     3979
+      14     2871
+      15     1991
+      16     1453
+      17      929
+      18      647
+      19      467
+      20      311
+      21      216
+      22      123
+      23      109
+      24       70
+      25       52
+      26       41
+      27       22
+      28       25
+      29       14
+      30        6
+      31        4
+      32        3
+      33        1
+      35        2
+      36        1
+proportion is 0.999370 Testing completed OK
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 214283
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0     3941
+       1    15883
+       2    31412
+       3    41675
+       4    41621
+       5    33589
+       6    22258
+       7    12827
+       8     6437
+       9     2851
+      10     1177
+      11      415
+      12      142
+      13       41
+      14       12
+      15        1
+      16        1
+proportion is 0.981608 Testing completed OK
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 400000
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0    53644
+       1   101973
+       2   102409
+       3    71093
+       4    39086
+       5    18632
+       6     7798
+       7     3230
+       8     1294
+       9      509
+      10      208
+      11       79
+      12       27
+      13       10
+      14        5
+      15        2
+      16        1
+proportion is 0.865890 Testing completed OK
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 400837
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0    47251
+       1   100881
+       2   107773
+       3    77228
+       4    41365
+       5    17528
+       6     6293
+       7     1845
+       8      546
+       9      101
+      10       24
+      11        1
+      12        1
+proportion is 0.882119 Testing completed OK
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 857144
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0   317687
+       1   312678
+       2   156949
+       3    52670
+       4    13680
+       5     2874
+       6      507
+       7       88
+       8        9
+       9        2
+proportion is 0.629366 Testing completed OK
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 857137
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0   315092
+       1   315639
+       2   157414
+       3    52728
+       4    13119
+       5     2655
+       6      419
+       7       62
+       8        7
+       9        2
+proportion is 0.632390 Testing completed OK

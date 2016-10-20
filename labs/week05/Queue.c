@@ -60,15 +60,19 @@ void enterQueue (Queue q, Item it)
    assert(q != NULL);
    Link n = createNode(it);
    if (q->head == NULL) {
-      q->head = n; 
-   }
-   q->tail = n;
+      q->head = q->tail =n; 
+   }else{
+   		q->tail->next = n;
+  	 	q->tail = q->tail->next;
+  }
+   q->size++;
 }
 
 // remove Item from head of Queue; return it
 Item leaveQueue (Queue q)
 {
    assert(q != NULL);
+  	assert(q->size > 0);
    Item it = q->head->item;
    Link delNode = q->head; 
    q->head = q->head->next;
@@ -92,6 +96,7 @@ void showQueue(Queue q)
    curr = q->head;
    while (curr != NULL) {
       printf(" %02d", curr->item);
+      curr = curr->next;
    }
    printf(" T\n");
 }

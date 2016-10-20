@@ -1,0 +1,766 @@
+a)
+the max length of first test for 85711 is 25
+The maximum chain length is decreasing with the increasing slots size, more and more items distribute around chain length 0 - 2 when items : slots close to 2:1 or 1:1. 
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 85711
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0        2
+       1       45
+       2      183
+       3      657
+       4     1573
+       5     3234
+       6     5340
+       7     7774
+       8     9770
+       9    10580
+      10    10715
+      11     9806
+      12     8233
+      13     6224
+      14     4414
+      15     2956
+      16     1889
+      17     1134
+      18      592
+      19      297
+      20      165
+      21       68
+      22       39
+      23       11
+      24        8
+      25        2
+Testing completed OK
+
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 100000
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0       63
+       1      380
+       2     1339
+       3     3329
+       4     5849
+       5     8645
+       6    11012
+       7    12045
+       8    11808
+       9    10668
+      10     8932
+      11     7141
+      12     5452
+      13     3979
+      14     2871
+      15     1991
+      16     1453
+      17      929
+      18      647
+      19      467
+      20      311
+      21      216
+      22      123
+      23      109
+      24       70
+      25       52
+      26       41
+      27       22
+      28       25
+      29       14
+      30        6
+      31        4
+      32        3
+      33        1
+      35        2
+      36        1
+Testing completed OK
+
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 214283
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0     3941
+       1    15883
+       2    31412
+       3    41675
+       4    41621
+       5    33589
+       6    22258
+       7    12827
+       8     6437
+       9     2851
+      10     1177
+      11      415
+      12      142
+      13       41
+      14       12
+      15        1
+      16        1
+Testing completed OK
+
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 400000
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0    53644
+       1   101973
+       2   102409
+       3    71093
+       4    39086
+       5    18632
+       6     7798
+       7     3230
+       8     1294
+       9      509
+      10      208
+      11       79
+      12       27
+      13       10
+      14        5
+      15        2
+      16        1
+Testing completed OK
+
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 400837
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0    47251
+       1   100881
+       2   107773
+       3    77228
+       4    41365
+       5    17528
+       6     6293
+       7     1845
+       8      546
+       9      101
+      10       24
+      11        1
+      12        1
+Testing completed OK
+
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 857144
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0   317687
+       1   312678
+       2   156949
+       3    52670
+       4    13680
+       5     2874
+       6      507
+       7       88
+       8        9
+       9        2
+Testing completed OK
+
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 857137
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0   315092
+       1   315639
+       2   157414
+       3    52728
+       4    13119
+       5     2655
+       6      419
+       7       62
+       8        7
+       9        2
+Testing completed OK
+
+b)
+Yes, the prime numbers do lead to a better distribution of hash values. Apparently, the max chain length getting shoter when the prime number of slots increasing. In addition, the distribution contain more items in small chain length.
+
+c)
+Yes
+Reading words from stdin
+Hash Table Stats:
+Number of slots = 857137
+Number of items = 857424
+Chain length distribution
+  Length  #Chains
+       0   315092
+       1   315639
+       2   157414
+       3    52728
+       4    13119
+       5     2655
+       6      419
+       7       62
+       8        7
+       9        2
+proportion is 0.632390
+
+d)
+Reading words from /home/cs1927/web/16s2/labs/week12/places
+Hash Table Stats:
+Number of slots = 1048576
+Number of items = 5252075
+Chain length distribution
+  Length  #Chains
+       0    25519
+       1    82104
+       2   139069
+       3   167369
+       4   163169
+       5   138079
+       6   105762
+       7    75826
+       8    51287
+       9    33590
+      10    21288
+      11    13318
+      12     8506
+      13     5554
+      14     3657
+      15     2502
+      16     1803
+      17     1375
+      18     1051
+      19      811
+      20      650
+      21      557
+      22      471
+      23      393
+      24      341
+      25      278
+      26      231
+      27      221
+      28      163
+      29      151
+      30      153
+      31      151
+      32      121
+      33      105
+      34      111
+      35       96
+      36       74
+      37       74
+      38       76
+      39       71
+      40       66
+      41       75
+      42       57
+      43       72
+      44       56
+      45       49
+      46       54
+      47       42
+      48       49
+      49       41
+      50       35
+      51       50
+      52       48
+      53       27
+      54       36
+      55       41
+      56       39
+      57       35
+      58       30
+      59       26
+      60       24
+      61       25
+      62       27
+      63       29
+      64       24
+      65       14
+      66       19
+      67       28
+      68       18
+      69       28
+      70       11
+      71       18
+      72       14
+      73       25
+      74       18
+      75       15
+      76       15
+      77       24
+      78       19
+      79       13
+      80       10
+      81       23
+      82       10
+      83       17
+      84       17
+      85       16
+      86       16
+      87       14
+      88       19
+      89       12
+      90       10
+      91       13
+      92       12
+      93       12
+      94        8
+      95       13
+      96       16
+      97       12
+      98        9
+      99       14
+     100        9
+     101        7
+     102       10
+     103        8
+     104        9
+     105       10
+     106       11
+     107        9
+     108        9
+     109        9
+     110        7
+     111        7
+     112        9
+     113        9
+     114        3
+     115        8
+     116       11
+     117        5
+     118       10
+     119        5
+     120        5
+     121        6
+     122        9
+     123        5
+     124       12
+     125        4
+     126        5
+     127        3
+     128        6
+     129        7
+     130        4
+     131        4
+     132        4
+     133        5
+     134        7
+     135        8
+     136       11
+     137        5
+     138        8
+     139        1
+     140        7
+     141        8
+     142        3
+     143        4
+     144        8
+     145        5
+     146       11
+     147        4
+     148        4
+     149        3
+     150        4
+     151        6
+     152        5
+     153        7
+     154        6
+     155       11
+     156        5
+     157       10
+     158        5
+     159        4
+     160        8
+     161        6
+     162        3
+     163        4
+     164        3
+     165        4
+     166        5
+     167        3
+     168        1
+     169        4
+     170        1
+     171        6
+     172        4
+     173        2
+     174        3
+     175        3
+     176        1
+     177        6
+     178        3
+     179        4
+     180        2
+     181        1
+     182        2
+     183        2
+     184        2
+     185        4
+     186        3
+     187        4
+     188        2
+     189        1
+     190        6
+     191        5
+     192        3
+     193        1
+     194        1
+     195        3
+     196        6
+     197        1
+     198        1
+     199        3
+     200        2
+     201        3
+     202        1
+     204        7
+     205        1
+     207        3
+     208        4
+     209        2
+     210        1
+     211        1
+     212        2
+     213        3
+     214        2
+     215        3
+     216        1
+     217        2
+     218        4
+     219        2
+     222        4
+     223        2
+     225        1
+     226        2
+     228        2
+     230        1
+     231        1
+     233        2
+     234        1
+     235        1
+     236        1
+     238        2
+     240        1
+     241        2
+     243        2
+     244        2
+     246        1
+     247        2
+     248        1
+     251        1
+     252        2
+     253        1
+     254        3
+     255        2
+     256        1
+     260        3
+     261        1
+     262        1
+     264        2
+     266        2
+     267        1
+     269        1
+     271        1
+     272        1
+     274        1
+     275        2
+     276        1
+     277        3
+     280        3
+     281        1
+     283        2
+     284        2
+     285        1
+     286        2
+     288        2
+     290        3
+     291        1
+     292        1
+     294        1
+     300        1
+     305        2
+     306        1
+     307        1
+     308        1
+     309        1
+     310        1
+     312        1
+     316        1
+     319        1
+     320        1
+     322        1
+     323        1
+     325        2
+     326        1
+     330        1
+     333        1
+     338        2
+     342        1
+     343        2
+     346        1
+     347        2
+     351        2
+     352        1
+     353        2
+     354        2
+     356        1
+     357        1
+     358        1
+     362        1
+     363        1
+     365        2
+     367        2
+     371        1
+     373        1
+     374        1
+     378        1
+     380        1
+     386        1
+     389        1
+     395        1
+     396        1
+     399        1
+     401        1
+     404        1
+     416        1
+     417        1
+     418        1
+     431        1
+     433        1
+     440        1
+     441        3
+     444        1
+     445        1
+     447        1
+     449        1
+     455        1
+     457        1
+     458        1
+     459        1
+     461        1
+     466        2
+     477        2
+     483        1
+     486        1
+     487        1
+     498        1
+     499        1
+     501        1
+     503        2
+     504        1
+     506        2
+     508        1
+     512        1
+     515        1
+     516        1
+     523        1
+     525        1
+     539        1
+     541        1
+     548        1
+     550        1
+     553        1
+     558        1
+     560        1
+     561        1
+     562        1
+     563        2
+     572        1
+     576        1
+     579        1
+     584        1
+     602        1
+     604        1
+     609        1
+     616        1
+     619        1
+     620        1
+     639        1
+     644        1
+     648        1
+     663        1
+     681        1
+     686        1
+     695        1
+     696        1
+     704        1
+     720        1
+     740        1
+     741        1
+     743        1
+     747        1
+     754        1
+     755        1
+     759        1
+     772        1
+     790        1
+     802        1
+     805        1
+     812        1
+     829        1
+     834        1
+     839        1
+     880        1
+     891        1
+     913        1
+     940        2
+     956        1
+     958        1
+     963        1
+     968        1
+    1011        1
+    1030        1
+    1081        1
+    1098        1
+    1116        1
+    1126        1
+    1134        1
+    1147        1
+    1163        1
+    1264        1
+    1275        1
+    1341        1
+    1438        1
+    1491        1
+    1685        1
+    1730        1
+    1769        1
+    1785        1
+    1853        1
+    1907        1
+    1955        1
+    1971        1
+    1977        1
+    2004        1
+    2017        1
+    2034        1
+    2065        1
+    2077        1
+    2084        1
+    2120        1
+    2173        1
+    2198        1
+    3497        1
+    3540        1
+    4082        1
+    4479        1
+proportion is 0.975663 
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 62.32      7.58     7.58 10504154     0.00     0.00  ListSearch
+ 16.96      9.64     2.06 10504154     0.00     0.00  hash
+  6.13     10.39     0.75  1048576     0.00     0.00  ListLength
+  4.94     10.99     0.60  1048576     0.00     0.00  dropList
+  4.45     11.53     0.54  5252075     0.00     0.00  HashTableInsert
+  3.66     11.97     0.45 258728702     0.00     0.00  cmp
+  0.49     12.03     0.06  5252075     0.00     0.00  ListInsert
+  0.33     12.07     0.04  5252076     0.00     0.00  ItemGet
+  0.25     12.10     0.03                             main
+  0.16     12.12     0.02  5252079     0.00     0.00  HashTableSearch
+  0.16     12.14     0.02  1048576     0.00     0.00  newList
+  0.08     12.15     0.01  5252075     0.00     0.00  newItem
+  0.08     12.16     0.01        1    10.01    30.03  newHashTable
+  0.08     12.17     0.01                             showList
+  0.00     12.17     0.00  5252075     0.00     0.00  dropItem
+  0.00     12.17     0.00        1     0.00   745.85  HashTableStats
+  0.00     12.17     0.00        1     0.00   600.68  dropHashTable
+
+Testing completed OK
+Reading words from /home/cs1927/web/16s2/labs/week12/places
+Hash Table Stats:
+Number of slots = 1048573
+Number of items = 5252075
+Chain length distribution
+  Length  #Chains
+       0     7226
+       1    35772
+       2    89435
+       3   146900
+       4   182833
+       5   181797
+       6   152354
+       7   109465
+       8    68972
+       9    38913
+      10    19587
+      11     9147
+      12     3909
+      13     1438
+      14      559
+      15      173
+      16       61
+      17       23
+      18        5
+      19        3
+      20        1
+proportion is 0.993109 
+Testing completed OK
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 32.76      2.15     2.15 10504154     0.00     0.00  hash
+ 32.00      4.25     2.10 10504154     0.00     0.00  ListSearch
+ 10.51      4.95     0.69  1048573     0.00     0.00  dropList
+  9.75      5.59     0.64  1048573     0.00     0.00  ListLength
+  8.23      6.13     0.54  5252075     0.00     0.00  HashTableInsert
+  1.98      6.26     0.13 36897911     0.00     0.00  cmp
+  1.37      6.35     0.09  5252076     0.00     0.00  ItemGet
+  0.91      6.41     0.06                             main
+  0.61      6.45     0.04  5252075     0.00     0.00  ListInsert
+  0.61      6.49     0.04  5252075     0.00     0.00  dropItem
+  0.53      6.52     0.04  5252079     0.00     0.00  HashTableSearch
+  0.30      6.54     0.02        1    20.02   660.75  HashTableStats
+  0.15      6.55     0.01  1048573     0.00     0.00  newList
+  0.15      6.56     0.01        1    10.01   740.84  dropHashTable
+  0.15      6.57     0.01        1    10.01    20.02  newHashTable
+  0.08      6.58     0.01                             HashTableDelete
+  0.00      6.58     0.00  5252075     0.00     0.00  newItem
+
+
+
+
+Obviously, the performence of 1048573 slots is much better than 
+1048576 slots, which nearly 6s quick. As we can seen from the two gprof
+ table above, the compares cost is huge different between first(3) and 
+ second(3) output.
+ Therefore, choose a suitable slots size is quiet important for function
+ perfromence.
+ 
+ e)
+ Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 30.56      0.29     0.29  2000004     0.00     0.00  ListSearch
+ 29.51      0.57     0.28  2000004     0.00     0.00  hash
+ 12.65      0.69     0.12   345678     0.00     0.00  ListLength
+ 12.65      0.81     0.12   345678     0.00     0.00  dropList
+  6.32      0.87     0.06  1000000     0.00     0.00  HashTableInsert
+  2.11      0.89     0.02                             main
+  1.05      0.90     0.01  4469132     0.00     0.00  cmp
+  1.05      0.91     0.01  1000004     0.00     0.00  HashTableSearch
+  1.05      0.92     0.01  1000001     0.00     0.00  ItemGet
+  1.05      0.93     0.01   857144     0.00     0.00  dropItem
+  1.05      0.94     0.01   345678     0.00     0.00  newList
+  1.05      0.95     0.01        1    10.01   140.16  dropHashTable
+  0.00      0.95     0.00  1000000     0.00     0.00  newItem
+  0.00      0.95     0.00   857144     0.00     0.00  ListInsert
+  0.00      0.95     0.00        1     0.00   120.14  HashTableStats
+  0.00      0.95     0.00        1     0.00    10.01  newHashTable
+
+As we can the table above, ListSearch function is the most costly
+function, and the cost of hash function is very close to ListSearch
+function.
+
+f)
+improve the ListSearch function and ListInsert function. Insert all the 
+item in order and replace the current search function with binary search.
+
