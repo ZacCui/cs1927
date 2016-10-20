@@ -865,7 +865,12 @@ improve the ListSearch function and ListInsert function. Insert all the
 item in order and replace the current search function with binary search.
 
 2)Improve the hash function (improve the distribution)
+<<<<<<< HEAD
 Change some magic numbers to reduce function return the same index
+=======
+Don't have efficient way to improve the hash for now :(
+Change the magic number in hash function. 
+>>>>>>> 55769558d2d17cfbbb56627e777e18c8474143f5
 
 =======================================================================
 

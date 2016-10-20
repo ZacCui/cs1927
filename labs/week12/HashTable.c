@@ -21,9 +21,11 @@ unsigned int hash(Key k, int tableSize)
 {
 	unsigned int h = 0;
 	int a = 31415, b = 27183;
+	Key pos = k;
 	for (; *k != '\0'; k++) {
 		a = a*b % (tableSize-1);
-		h = (a*h + *k) % tableSize;
+		//h = (a*h + (*k)) % tableSize;
+		h = (a*h+(*k)+(k - pos)) % tableSize;
 	}
 	return (h % tableSize);
 }
@@ -96,6 +98,14 @@ void HashTableStats(HashTable ht)
 			printf("%8d %8d\n",length,num_chain[length]);
 		}
 	}
+	
+	//caculate the average chain length of the HashTable
+	double aver = 0.0;
+	for(i = 0 ; i < arrayLength; ++i){
+		aver += num_chain[i]+i;
+	}
+	aver = aver/ht->nslots;
+	printf("The average length of chain is %lf \n", aver);
 	
 	//caculate the proportion of slots be occupied
 	double proportion = 0.0;
